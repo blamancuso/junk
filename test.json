@@ -1,0 +1,18 @@
+{
+	"text": "",
+	"mrkdwn": true,
+	"attachments": [{
+		"fallback": "{{initiator.displayName}} just left a comment on {{issue.key}}",
+		"color": "#ff0000",
+		"pretext": "*{{initiator.displayName}}* has has commented on {{issue.key}}",
+		"author_name": "{{initiator.displayName}}",
+		"author_icon": "http://iconshow.me/media/images/ui/ios7-icons/png/32/contact.png",
+		"title": "{{issue.key}}: {{issue.summary.jsonEncode}}",
+		"title_link": "https://techneauxlogics.atlassian.net/browse/{{issue.key}}/",
+		"text": "{{comment.body.jsonEncode}}",
+
+            "footer": "Commented: {{#now}}format="mediumDateTime",zone={{reporter.timeZone}}{{/}} | via <https://techneauxlogics.atlassian.net/plugins/servlet/ac/com.codebarrel.addons.automation/cb-jira-automation-rules|Project Automation (Comment LAM Issue to Slack)>",
+		"footer_icon": "",
+		"ts": "Hello There!"
+	}]
+}
